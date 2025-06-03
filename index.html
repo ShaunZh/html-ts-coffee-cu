@@ -15,12 +15,24 @@
 
     <body>
         <div class="flex flex-col items-center justify-center h-screen ">
-            <div class=" rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+            <div class="flex flex-col gap-4  rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
                 <button 
-                id="connectButton" 
-                class="bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-600 transition-colors duration-300 active:scale-95"
+                    id="connectButton" 
+                    class="bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-600 transition-colors duration-300 active:scale-95"
                 >Connect</button>
+                <button 
+                    id="balanceButton"
+                   class="bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-600 transition-colors duration-300 active:scale-95"
+                >Get Balance</button>
 
+                <!-- Form -->
+                <label for="ethAmount">ETH Amount</label>
+                <input type="number" id="ethAmount" placeholder="0.1" />
+                <button  
+                    type="button" 
+                    id="fundButton"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-blue-600 transition-colors duration-300 active:scale-95"
+                >Buy Coffee</button>
 
             </div>
         </div>
